@@ -98,5 +98,5 @@
 
 /* card */
 .card {
-    @apply bg-gray-100 py-3 px-4 m-2 text-center text-gray-700;
+    @apply bg-gray-100 py-3 px-4 m-2 text-center text-gray-700 flex-grow-0 flex-shrink-0;
 }
