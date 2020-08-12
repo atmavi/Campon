@@ -64,3 +64,24 @@
 .img-gallery-photo:not(:last-child) {
     margin-right: .5rem;
 }
+
+.btn {
+    @apply bg-transparent border-b-2 py-1 px-2 inline-block shadow-sm;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: scale(1.05) translateY(-2px);
+    @apply shadow-lg;
+}
+
+.btn-primary {
+    @apply border-primary-light
+}
+
+.btn-primary:hover {
+    @apply bg-primary-light text-white;
+}
+
+
+
