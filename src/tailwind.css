@@ -49,7 +49,8 @@
 
 /* section */
 .section-features {
-    @apply flex flex-wrap bg-primary-light py-12 px-8;
+    @apply flex flex-wrap bg-primary-light py-16 px-8;
+    height: 80vh;
 }
 
 .about-content p:not(:last-child) {
