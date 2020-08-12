@@ -99,9 +99,15 @@
 /* feature contents */
 .feature-box {
     @apply bg-gray-100 py-3 px-4 m-2 text-center text-gray-700 flex-grow-0 flex-shrink-0;
+    transition: all .2s;
+}
+
+.feature-box:hover {
+    transform: translateY(-.5rem);
 }
 
 .feature-icon {
     @apply block text-center text-primary-light mt-4;
     font-size: 6rem;
 }
+
