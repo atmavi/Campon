@@ -52,6 +52,10 @@
     @apply flex flex-wrap bg-primary-light py-16 px-8;
 }
 
+.section-tours {
+    @apply flex flex-wrap py-16 px-8;
+}
+
 .about-content p:not(:last-child) {
     @apply mb-6;
 }
@@ -109,5 +113,49 @@
 .feature-icon {
     @apply block text-center text-primary-light mt-4;
     font-size: 6rem;
+}
+
+
+/* card */
+.card {
+    @apply shadow-md;
+    transition: all .2s;
+}
+
+.card:hover {
+    @apply shadow-lg;
+    transform: translateY(-1.5rem) scale(1.05);
+}
+
+.card-container {
+    @apply w-full;
+}
+
+.card-header {
+    height: 30vh;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(33, 160, 76,0.8),
+            rgba(40, 180, 133, 0.8)),
+        url(../public/img/camp1.jpg);
+        background-blend-mode: screen;
+        background-size: cover;
+    background-position: bottom;
+    transition: all 1s;
+}
+
+.card:hover .card-header {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(33, 160, 76,0.4),
+            rgba(40, 180, 133, 0.4)),
+        url(../public/img/camp1.jpg);
+}
+
+.card-heading {
+    @apply text-3xl uppercase px-4 py-2 font-medium text-gray-900;
+    background-image: linear-gradient(
+            rgba(255, 255, 255,0.7),
+            rgba(255, 255, 255, 0.9));
 }
 
