@@ -118,7 +118,7 @@
 
 /* card */
 .card {
-    @apply shadow-md mb-4;
+    @apply shadow-md mb-4 text-gray-600;
     transition: all .2s;
 }
 
@@ -153,18 +153,16 @@
 }
 
 .card-heading {
-    @apply text-3xl uppercase px-4 py-2 font-medium text-gray-900;
+    @apply text-3xl uppercase px-4 py-2 font-medium text-gray-800;
     background-image: linear-gradient(
             rgba(255, 255, 255,0.7),
             rgba(255, 255, 255, 0.9));
 }
 
 .card-body {
-    @apply w-full flex flex-wrap text-gray-600;
 }
 
 .card-footer {
-    @apply w-full;
 }
 
 .card-list {
@@ -172,11 +170,11 @@
 }
 
 .card-item {
-    @apply px-2 py-1 border-b-2 border-solid border-gray-300;
+    @apply px-2 py-1 border-solid border-gray-300;
 }
 
-,card-item:not(:last-child) {
-    @apply mb-1
+.card-item:not(:last-child) {
+    @apply mb-1 border-b-2;
 }
 
 
