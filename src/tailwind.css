@@ -127,7 +127,7 @@
 
 .card:hover {
     @apply shadow-lg;
-    transform: translateY(-1.5rem) scale(1.05);
+    transform: translateY(-0.5rem) scale(1.01);
 }
 
 .card-container {
