@@ -101,6 +101,13 @@
     @apply bg-primary-dark text-white;
 }
 
+.btn-yellow {
+    @apply bg-yellow-500 text-white;
+}
+
+.btn-red {
+    @apply bg-red-500 text-white;
+}
 
 
 /* feature contents */
@@ -219,5 +226,5 @@
 }
 
 .card-cta {
-    @apply text-lg px-8 py-2 btn btn-primary rounded-full my-2 w-3/4;
+    @apply text-lg px-8 py-2 btn rounded-full my-2 w-3/4;
 }
