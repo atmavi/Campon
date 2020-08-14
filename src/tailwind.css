@@ -81,7 +81,7 @@
 
 /* buttons */
 .btn {
-    @apply bg-transparent border-b-2 py-1 px-2 inline-block shadow-sm;
+    @apply border-b-2 py-1 px-2 inline-block;
     transition: all .2s;
 }
 
@@ -90,12 +90,15 @@
     @apply shadow-lg;
 }
 
-.btn-primary {
-    @apply border-primary-light
+.btn-text {
+    @apply border-primary-light;
+}
+.btn-text:hover {
+    @apply bg-primary-light text-white;
 }
 
-.btn-primary:hover {
-    @apply bg-primary-light text-white;
+.btn-primary {
+    @apply bg-primary-dark text-white;
 }
 
 
@@ -159,10 +162,10 @@
             rgba(255, 255, 255, 0.9));
 }
 
-.card-body {
-}
+.card-body { }
 
 .card-footer {
+    @apply flex flex-col justify-center items-center;
 }
 
 .card-list {
@@ -177,5 +180,6 @@
     @apply mb-1 border-b-2;
 }
 
-
-
+.card-cta {
+    @apply text-lg px-8 py-2 btn btn-primary rounded-full my-2 w-3/4;
+}
