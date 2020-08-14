@@ -201,7 +201,7 @@
 
 
 .card-heading {
-    @apply text-3xl uppercase px-4 py-2 font-medium text-gray-800;
+    @apply text-xl uppercase px-4 py-2 font-medium text-gray-800;
     background-image: linear-gradient(
             rgba(255, 255, 255,0.7),
             rgba(255, 255, 255, 0.9));
