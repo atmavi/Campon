@@ -112,7 +112,7 @@
 
 /* feature contents */
 .feature-box {
-    @apply bg-gray-100 py-3 px-4 m-2 text-center text-gray-700 flex-grow-0 flex-shrink-0;
+    @apply bg-gray-100 py-3 px-4 m-2 text-center text-gray-700 flex-grow-0 flex-shrink-0 rounded;
     transition: all .2s;
 }
 
@@ -128,7 +128,7 @@
 
 /* card */
 .card {
-    @apply shadow-md mb-4 text-gray-600;
+    @apply shadow-md mb-4 text-gray-600 rounded overflow-hidden;
     transition: all .2s;
 }
 
@@ -201,7 +201,7 @@
 
 
 .card-heading {
-    @apply text-xl uppercase px-4 py-2 font-medium text-gray-800;
+    @apply text-xl uppercase px-4 py-2 font-medium text-gray-800 rounded-sm;
     background-image: linear-gradient(
             rgba(255, 255, 255,0.7),
             rgba(255, 255, 255, 0.9));
