@@ -228,3 +228,7 @@
 .card-cta {
     @apply text-lg px-8 py-2 btn rounded-full my-2 w-3/4;
 }
+
+.card-price {
+    @apply font-semibold text-lg ;
+}
