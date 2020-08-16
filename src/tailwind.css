@@ -61,7 +61,7 @@
 }
 
 .section-book {
-    @apply py-32 px-10 mt-16 bg-primary-dark;
+    @apply py-32 px-10 bg-primary-dark;
 }
 
 /* image gallery */
