@@ -56,12 +56,12 @@
     @apply flex flex-wrap py-16 px-8;
 }
 
-.about-content p:not(:last-child) {
-    @apply mb-6;
-}
-
 .section-stories {
     @apply py-32 mt-16 bg-gray-100 text-gray-600;
+}
+
+.section-book {
+    @apply py-32 mt-16 bg-primary-dark;
 }
 
 /* image gallery */
@@ -80,6 +80,10 @@
 
 .img-gallery-photo:not(:last-child) {
     margin-right: .5rem;
+}
+
+.about-content p:not(:last-child) {
+    @apply mb-6;
 }
 
 
@@ -249,6 +253,56 @@
     @apply text-center w-3/4 mt-4;
 }
 
+
+
+
 .story-user {
     @apply text-gray-700 italic mt-4 block;
 }
+
+/* book-form */
+.book {
+    background-image: url(../public/img/mountain.jpg);
+    background-size: cover;
+}
+
+/* form */
+.form {
+    @apply bg-gray-200 bg-opacity-75 flex flex-wrap py-6 px-10 text-gray-700;
+}
+
+.form > input, label {
+    @apply w-full;
+}
+/* 
+form .form-label:first-of-type {
+    @apply mt-6;
+} */
+
+.form-label {
+    @apply opacity-100 visible text-sm px-4 text-gray-700;
+    transform: translateY(-6rem);
+    transition: all .2s;
+}
+
+.form-input:placeholder-shown + .form-label {
+    @apply opacity-0 invisible;
+}
+
+.form-input {
+    @apply bg-gray-200 mt-1 mb-4 py-4 px-4 rounded-md;
+}
+
+.form-input:focus {
+    @apply bg-white outline-none;
+}
+
+.form-input:focus:invalid {
+    @apply border-red-500 border-b-2 outline-none;
+}
+
+
+
+
+
+
