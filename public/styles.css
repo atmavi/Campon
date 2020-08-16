@@ -18452,10 +18452,6 @@ video {
   padding-right: 2rem;
 }
 
-.about-content p:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .section-stories {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -18466,6 +18462,16 @@ video {
   --text-opacity: 1;
   color: #718096;
   color: rgba(113, 128, 150, var(--text-opacity));
+}
+
+.section-book {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  --bg-opacity: 1;
+  background-color: #28b485;
+  background-color: rgba(40, 180, 133, var(--bg-opacity));
 }
 
 /* image gallery */
@@ -18492,6 +18498,10 @@ video {
 
 .img-gallery-photo:not(:last-child) {
   margin-right: .5rem;
+}
+
+.about-content p:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 /* buttons */
@@ -18770,8 +18780,6 @@ video {
   height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
 }
 
 .story-text {
@@ -18787,6 +18795,97 @@ video {
   font-style: italic;
   margin-top: 1rem;
   display: block;
+}
+
+/* book-form */
+
+.book {
+  background-image: url(../public/img/mountain.jpg);
+  background-size: cover;
+}
+
+/* form */
+
+.form {
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  --bg-opacity: 0.75;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  width: 100%;
+}
+
+.form > input, label {
+  width: 100%;
+}
+
+/* 
+form .form-label:first-of-type {
+    @apply mt-6;
+} */
+
+.form-label {
+  opacity: 1;
+  visibility: visible;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  transform: translateY(-6rem);
+  transition: all .2s;
+}
+
+.form-input:-moz-placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-input:-ms-input-placeholder + .form-label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-input {
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.375rem;
+}
+
+.form-input:focus {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  outline: 0;
+}
+
+.form-input:focus:invalid {
+  --border-opacity: 1;
+  border-color: #f56565;
+  border-color: rgba(245, 101, 101, var(--border-opacity));
+  border-bottom-width: 2px;
+  outline: 0;
 }
 
 @media (min-width: 640px) {
@@ -89496,3 +89595,9 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
+
+
+
+
+
