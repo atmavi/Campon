@@ -4,8 +4,8 @@
 
 /* COLORS */
 :root {
-    --color-primary: #55c57a;
-    --color-primary-light: #7ed56f;
+    --color-primary: #7ed56f;
+    --color-primary-light: #55c57a;
     --color-primary-dark: #28b485;
 }
 
@@ -49,7 +49,7 @@
 
 /* section */
 .section-features {
-    @apply flex flex-wrap bg-primary-light py-16 px-8;
+    @apply flex flex-wrap bg-primary-dark py-16 px-8;
 }
 
 .section-tours {
@@ -300,6 +300,28 @@ form .form-label:first-of-type {
 .form-input:focus:invalid {
     @apply border-red-500 border-b-2 outline-none;
 }
+
+/* footer */
+.footer {
+    @apply flex flex-wrap bg-gray-800 text-gray-100 py-8 px-16 text-center;
+}
+
+.footer-links {
+    @apply w-full flex text-sm  flex-wrap mt-4 items-center justify-center;
+}
+
+.footer-link {
+    @apply flex-grow py-2 px-4 rounded-sm;
+    transition: all .3s;
+}
+
+.footer-link:hover {
+    @apply bg-primary text-gray-200;
+}
+
+.footer-link {}
+
+.footer-copyright {}
 
 
 
