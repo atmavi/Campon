@@ -61,7 +61,7 @@
 }
 
 .section-book {
-    @apply py-32 mt-16 bg-primary-dark;
+    @apply py-32 px-10 mt-16 bg-primary-dark;
 }
 
 /* image gallery */
@@ -268,7 +268,7 @@
 
 /* form */
 .form {
-    @apply bg-gray-200 bg-opacity-75 flex flex-wrap py-6 px-10 text-gray-700;
+    @apply bg-gray-200 bg-opacity-75 flex flex-wrap py-6 px-10 text-gray-700 w-full;
 }
 
 .form > input, label {
