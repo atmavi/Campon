@@ -11,10 +11,29 @@
 </head>
 
 <body>
-   <header class="header">
-      <h1 class="header--sub">
-         Together we will conquer the heights
-      </h1>
+
+   <nav class="nav fixed z-50 bg-primary-dark w-full flex text-white justify-between px-8 py-4 items-center">
+      <div class="nav-logo text-2xl font-semibold">CampOn</div>
+      <div class="menu visible md:hidden">
+         <button class="menu-btn">Menu</button>
+      </div>
+      <ul class="user-nav hidden md:flex">
+         <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm hover:bg-primary h-full">Log in</a>
+         <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm bg-white text-primary hover:bg-gray-100 h-full">Sign
+            up</a>
+      </ul>
+   </nav>
+   <header class="header flex items-center justify-end">
+      <div class="header-text-box w-full md:w-1/2 bg-gray-300 bg-opacity-75 p-4">
+         <h1 class="heading-primary">
+            <span class="heading-primary-sub">
+               Together
+               <span class="heading-primary-main">we</span>
+               will
+               <span class="heading-primary-main">conquer the heights</span>
+         </h1>
+      </div>
+
    </header>
 
    <main>
