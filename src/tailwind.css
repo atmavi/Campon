@@ -10,7 +10,7 @@
 }
 
 .header {
-   height: 90vh;
+   height: 110vh;
    background-image: linear-gradient(
         to right bottom,
         rgba(33, 160, 76,0),
@@ -22,16 +22,17 @@
 
 
 /* typograghy */
-.header--main {
-    @apply text-6xl font-extrabold text-gray-700 uppercase;
-}
-
-.header--sub {
-    @apply text-5xl font-bold text-gray-400 font-bold;
-}
-
 .heading-primary {
-    @apply text-5xl text-white uppercase;
+    @apply text-5xl text-primary-dark uppercase font-bold;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.heading-primary-main {
+    @apply text-4xl font-extrabold text-primary-dark uppercase;
+}
+
+.heading-primary-sub {
+    @apply text-2xl font-bold text-gray-700 font-bold;
 }
 
 .heading-secondary {
