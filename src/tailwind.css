@@ -90,7 +90,7 @@
 
 /* buttons */
 .btn {
-    @apply border-b-2 py-1 px-2 inline-block;
+    @apply py-1 px-2 inline-block;
     transition: all .2s;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .btn-text {
-    @apply border-primary-light;
+    @apply border-primary-light border-b-2;
 }
 .btn-text:hover {
     @apply bg-primary-light text-white;
