@@ -118,6 +118,10 @@
     @apply bg-red-500 text-white;
 }
 
+.btn-header {
+    @apply btn-primary rounded-full inline-block py-4 px-8 text-xl mt-8 transform transition duration-300 translate-y-2;
+}
+
 
 /* feature contents */
 .feature-box {
