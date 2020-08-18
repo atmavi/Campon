@@ -14,16 +14,18 @@
 
    <nav class="nav fixed z-50 bg-primary-dark w-full flex text-white justify-between px-8 py-4 items-center">
       <div class="nav-logo text-2xl font-semibold">CampOn</div>
-      <div class="menu visible md:hidden">
-         <button class="menu-btn">Menu</button>
-      </div>
+      <button class="menu-btn md:hidden">Menu</button>
       <ul class="user-nav hidden md:flex">
+         <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm hover:bg-primary h-full">About</a>
+         <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm hover:bg-primary h-full">Stories</a>
+         <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm hover:bg-primary h-full">Tours</a>
+         <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm hover:bg-primary h-full">Book Now</a>
          <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm hover:bg-primary h-full">Log in</a>
          <a href="/" class="nav-link ml-4 px-4 py-2 rounded-sm bg-white text-primary hover:bg-gray-100 h-full">Sign
             up</a>
       </ul>
    </nav>
-   <header class="header flex items-center justify-end">
+   <header class="header flex items-center justify-end relative">
       <div class="header-text-box w-full md:w-1/2 bg-gray-300 bg-opacity-75 p-4">
          <h1 class="heading-primary">
             <span class="heading-primary-sub">
@@ -32,6 +34,8 @@
                will
                <span class="heading-primary-main">conquer the heights</span>
          </h1>
+         <a href="#section-tours" class="btn btn-primary rounded-full py-8 px-16 text-xl mt-16">Discover our Tours</a
+            href="#section-tours">
       </div>
 
    </header>
@@ -100,7 +104,7 @@
          </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
          <h2 class="heading-secondary w-full">Most popular tours</h2>
 
          <div class="card-container lg:justify-evenly">
