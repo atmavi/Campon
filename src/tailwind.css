@@ -324,7 +324,9 @@ form .form-label:first-of-type {
     @apply bg-primary text-gray-200;
 }
 
-.footer-link {}
+.footer-link {
+    @apply cursor-pointer;
+}
 
 .footer-copyright {}
 
